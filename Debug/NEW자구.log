@@ -1,0 +1,3 @@
+﻿  0428_선형큐.cpp
+C:\Users\USER\source\repos\NEW자구\0428_선형큐.cpp(62,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  NEW자구.vcxproj -> C:\Users\USER\source\repos\NEW자구\Debug\NEW자구.exe
