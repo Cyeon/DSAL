@@ -5,18 +5,18 @@ class Queue {
 	int qSize;
 	int front;
 	int real;
-	int count;
+	//int count;
 
 public :
 	void InitQueue(int qSize) {
 		this->qSize = qSize;
 		buf = new int[qSize];
 		front = -1;
-		real = -1;
-		count = 0;
+		real = -1;	
+//		count = 0;
 	}
 	void EnQueue(int data) {
-		if (count>= qSize) {
+		if (IsFull()==true) {
 			cout << "Å¥°¡ ²Ë Ã¡À½" << endl;
 			return;
 		}
@@ -24,23 +24,23 @@ public :
 		{
 			real++;
 			buf[real] = data;
-			count++;
+			//count++;
 		}
 	}
 	int DeQueue() {
-		if (count == 0) {
+		if (IsEmpty()==true) {
 			return front;
 		}
 		else
 		{
 			front++;
-			count--;
+			//count--;
 			return buf[front];
 		
 		}
 	}
 	int IsFull() {
-		if (qSize == count) {
+		if (qSize == real+1) {
 			return 1;
 		}
 		else
@@ -49,7 +49,7 @@ public :
 		}
 	}
 	int IsEmpty() {
-		if (count == 0) {
+		if (front==real&&front!=-1) {
 			return 1;
 		}
 		else

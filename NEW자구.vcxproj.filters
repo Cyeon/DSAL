@@ -18,7 +18,16 @@
     <ClCompile Include="0422_스택응용소스4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0428_선형큐.cpp">
+    <ClCompile Include="0503_큐응용3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0510_연결리스트.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0517_연결리스트-큐.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0519_연결리스트-스택.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
