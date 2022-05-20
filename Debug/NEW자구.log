@@ -1,3 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(Debug\)에 다른 프로젝트(NEW자구.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  0519_연결리스트-스택.cpp
+  0520_연결리스트-큐.cpp
+C:\Users\USER\source\repos\DSAL\0520_연결리스트-큐.cpp(9,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'NODE' 왼쪽은 무시됩니다.
   NEW자구.vcxproj -> C:\Users\USER\source\repos\DSAL\Debug\DSAL.exe

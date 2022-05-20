@@ -61,7 +61,6 @@ public:
 	}
 };
 
-//Print 부분만 구현이 안 되어서 예시코드 보고 했습니다 
 void PrintQueue(Queue q) {
 	cout << "front=" << q.front << " " << "rear = " << q.rear << " "; 
 	if (!q.IsEmpty()) { 
