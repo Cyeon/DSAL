@@ -37,6 +37,9 @@
     <ClCompile Include="0519_연결리스트-스택.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="0524_수행_회문.cpp" />
+    <ClCompile Include="0526_수행_괄호검사.cpp" />
+    <ClCompile Include="0526_수행_진법전환.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
