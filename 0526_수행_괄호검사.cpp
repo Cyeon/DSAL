@@ -3,7 +3,7 @@
 #include<stack>
 using namespace std;
 int main() {
-	
+
 	while (true)
 	{
 		stack<char> stk;
@@ -15,7 +15,7 @@ int main() {
 				check = false;
 				break;
 			}
-			if (str[i]=='('||str[i]=='{'||str[i]=='[') {
+			if (str[i] == '(' || str[i] == '{' || str[i] == '[') {
 				stk.push(str[i]);
 			}
 			else if (str[i] == ')') {
@@ -34,7 +34,6 @@ int main() {
 				else {
 					check = false;
 					break;
-
 				}
 			}
 			else if (str[i] == ']') {
@@ -47,15 +46,8 @@ int main() {
 				}
 			}
 		}
-		if (!stk.empty()) {
-			check = false;
-		}
-		if (check == false) {
-			cout << "괄호 검사 실패" << endl;
-		}
-		else
-		{
-			cout << "괄호 검사 성공" << endl;
-		}
+		if (!stk.empty()) { check = false; }
+		if (check == false) { cout << "괄호 검사 실패" << endl; }
+		else { cout << "괄호 검사 성공" << endl; }
 	}
 }

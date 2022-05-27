@@ -31,7 +31,6 @@ int main() {
 				stk.push((n % k) + 55);
 			}
 		}
-		
 		while (!stk.empty()) {
 			cout << stk.top();
 			stk.pop();

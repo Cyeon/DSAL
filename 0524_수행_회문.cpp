@@ -16,7 +16,7 @@ int main() {
 			stk.push(str[i]);
 			que.push(str[i]);
 		}
-		while (!stk.empty()&&!que.empty())
+		while (!stk.empty() && !que.empty())
 		{
 			if (stk.top() == que.front()) {
 				stk.pop();
@@ -28,9 +28,6 @@ int main() {
 			}
 		}
 		if (check == true) { cout << "회문입니다" << endl; }
-		else
-		{
-			cout << "회문이 아닙니다" << endl;
-		}
+		else { cout << "회문이 아닙니다" << endl; }
 	}
 }
