@@ -15,37 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0422_스택응용소스4.cpp">
+    <ClCompile Include="0531_몽쉘먹기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0503_큐응용3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0510_연결리스트.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0520_연결리스트-큐.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0519_연결리스트-스택.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0414_스택소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0428_선형큐.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0429_원형큐.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0524_수행_회문.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0526_수행_괄호검사.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0526_수행_진법전환.cpp">
+    <ClCompile Include="0531_기차운행.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
