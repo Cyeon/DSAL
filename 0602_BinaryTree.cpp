@@ -87,29 +87,101 @@ BTreeNode* MakeExpTree(string exp)
 
 		//연산자, 피연산자 체크 
 		if (isdigit(exp[i])) {
-
+			SetData(pNode, exp[i] - '0');
 		}
 		else
 		{
-
+			SetData(pNode, exp[i]);
+			MakeRightSubTree(pNode, stk.top());
+			stk.pop();
+			MakeLeftSubTree(pNode, stk.top());
+			stk.pop();
 		}
 		stk.push(pNode);
 	}
-
-
+	pNode = stk.top();
+	stk.pop();
 	return pNode;
-
 }
 
 int EvaluateExpTree(BTreeNode* bt)
 {
-	// 구현해보자!
-	// 처음부터 짜기 많이 어려우면 첨부된 cpp 파일의 주석 부분 내용 채우기~!! 
+	int op1, op2;
+
+	// 종료 조건
+	if (GetLeftSubTree(bt) == NULL && GetRightSubTree(bt) == NULL){
+		return GetData(bt);
+	}
+	op1 = EvaluateExpTree(GetLeftSubTree(bt));
+	op2 = EvaluateExpTree(GetRightSubTree(bt));
+	switch (GetData(bt))
+	{
+	case '+':
+		return op1 + op2;
+	case '-':
+		return op1 - op2;
+	case '*':
+		return op1 * op2;
+	case '/':
+		return op1 / op2;
+	}
+	return 0;
 }
 
 int prec(char op) {
-	// 구현해보자!
+	switch (op)
+	{
+	case '(':
+	case ')':
+		return 0;
+	case '+':
+	case '-':
+		return 1;
+	case '*':
+	case '/':
+		return 2;
+	}
+	return -1;
 }
 string infixToPostfix(string infix) {
-	// 구현해보자!
+	string postfix = "";
+	stack<int> stk;
+	char temp;
+	for (int i = 0; i < infix.length(); i++)
+	{
+		temp = infix[i];
+		switch (temp)
+		{
+		case '+':
+		case '-':
+		case '*':
+		case '/':
+			while (!stk.empty() && prec(temp) <= (stk.top()))
+			{
+				postfix += stk.top();
+				stk.pop();
+			}
+			stk.push(temp);
+		case '(':
+			stk.push(temp);
+			break;
+		case ')':
+			while (stk.top() != '(')
+			{
+				postfix += stk.top();
+				stk.pop();
+			}
+			stk.pop();
+			break;
+		default:
+			postfix += temp;
+			break;
+		}
+	}
+	while (!stk.empty())
+	{
+		postfix += stk.top();
+		stk.pop();
+	}
+	return postfix;
 }
