@@ -18,13 +18,13 @@
     <ClCompile Include="0531_기차운행.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0602_Main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="0602_BinaryTree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0609_이진탐색.cpp">
+    <ClCompile Include="0610_이진탐색트리.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

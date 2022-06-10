@@ -23,10 +23,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="0602_BinaryTree.cpp" />
-    <ClCompile Include="0602_Main.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    <ClCompile Include="Main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="0609_이진탐색.cpp" />
+    <ClCompile Include="0610_이진탐색트리.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0602_BT.h" />
