@@ -18,18 +18,18 @@
     <ClCompile Include="0531_기차운행.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="0616_영어단어장_Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0602_BinaryTree.cpp">
+    <ClCompile Include="0616_영어단어장_BT.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0610_이진탐색트리.cpp">
+    <ClCompile Include="0617_힙트리-우선순위큐.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="0602_BT.h">
+    <ClInclude Include="0616_영어단어장_BT.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -109,3 +109,7 @@ void BST::Delete(BTreeNode* parent, BTreeNode* node) {
         delete s;
     }
 }
+
+//(2*i)+1 left
+//(2*1)+2 right
+//(i-1)/2 up
