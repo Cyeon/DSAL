@@ -162,6 +162,7 @@ string infixToPostfix(string infix) {
 				stk.pop();
 			}
 			stk.push(temp);
+			break;
 		case '(':
 			stk.push(temp);
 			break;
