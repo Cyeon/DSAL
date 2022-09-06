@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0901_P_숫자문자열과영단어.cpp" />
+    <ClCompile Include="0901_P_신규아이디추천.cpp" />
+    <ClCompile Include="0901_인접행렬그래프표현(vector).cpp" />
+    <ClCompile Include="0906_인접행렬을이요한그래프표현1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

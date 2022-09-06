@@ -1,3 +1,6 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(Debug\)에 다른 프로젝트(NEW자구.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  0901_P_숫자문자열과영단어.cpp
+  0901_인접행렬그래프표현(vector).cpp
+C:\Users\USER\source\repos\DSAL\0901_인접행렬그래프표현(vector).cpp(24,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\source\repos\DSAL\0901_인접행렬그래프표현(vector).cpp(40,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\source\repos\DSAL\0901_인접행렬그래프표현(vector).cpp(44,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   NEW자구.vcxproj -> C:\Users\USER\source\repos\DSAL\Debug\DSAL.exe
