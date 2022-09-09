@@ -18,10 +18,7 @@
     <ClCompile Include="0901_P_신규아이디추천.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0906_인접행렬을이요한그래프표현1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0901_인접행렬그래프표현(vector).cpp">
+    <ClCompile Include="0908_DFS구현.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
