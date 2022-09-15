@@ -23,7 +23,7 @@
     <ClCompile Include="0908_DFS,BFS구현.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="0913_B_미로탐색.cpp" />
+    <ClCompile Include="0915_B_유기농배추.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -19,6 +19,7 @@ int main() {
 		}
 		temp = "";
 	}
+
 	queue<pair<int, int>> q;
 	visited[0][0] = 1;
 	q.push({ 0, 0 });
@@ -29,7 +30,8 @@ int main() {
 		for (int i = 0; i < 4; i++) {
 			int ny = y + dy[i];// 채워보자 
 			int nx = x + dx[i];// 채워보자 
-			if ((ny < 0 || ny >= MAX) || (nx < 0 || nx >= MAX)) { continue; }
+			if ((ny < 0 || ny >= n) || (nx < 0 || nx >= m)) { continue; }
+			if (visited[ny][nx] != 0) { continue; }
 			if (a[ny][nx] == 0) { continue; }
 			visited[ny][nx] = visited[y][x] + 1;// 채워보자 
 			q.push({ ny, nx });
