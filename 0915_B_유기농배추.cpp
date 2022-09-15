@@ -19,6 +19,7 @@ void DFS(int y, int x, bool first) {
 		DFS(ny, nx, false);
 	}
 }
+
 int main() {
 	int t;
 	cin >> t;
@@ -31,11 +32,12 @@ int main() {
 				arr[i][j] = 0;
 			}
 		}
+
 		cin >> m >> n >> k;
 		for (int i = 0; i < k; i++)
 		{
 			int y, x;
-			cin >> y >> x;
+			cin >> x >> y;
 			arr[y][x] = 1;
 		}
 
