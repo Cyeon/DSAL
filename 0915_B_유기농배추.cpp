@@ -30,6 +30,7 @@ int main() {
 			for (int j = 0; j < 50; j++)
 			{
 				arr[i][j] = 0;
+				visited[i][j] = false;
 			}
 		}
 
@@ -48,7 +49,7 @@ int main() {
 				DFS(i, j, true);
 			}
 		}
-		cout << result;
+		cout << result<<endl;
 		result = 0;
 	}
 }
