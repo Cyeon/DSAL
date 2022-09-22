@@ -21,7 +21,7 @@
     <ClCompile Include="0908_DFS,BFS구현.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0920_B_안전영역.cpp">
+    <ClCompile Include="0922_다익스트라.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
