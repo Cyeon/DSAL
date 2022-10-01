@@ -1,8 +1,12 @@
 #include <iostream>
+#include <vector>
 #include <queue>
 using namespace std;
 #define MAX_VTXS 256
 #define INF 9999
+int V, E, start, u, v, w;
+vector<pair<int, int>> weight[20001];
+const int INF = 987654321;
 class  AdjMatGraph
 {
 protected:
@@ -22,7 +26,7 @@ public:
 		{
 			for (int j = 0; j < MAX_VTXS; j++)
 			{
-				SetEdge(i, j, 0);
+				SetEdge(i, j, INF);
 			}
 		}
 	}
@@ -32,9 +36,8 @@ public:
 		size++;
 		vertices[size - 1] = name;
 	}
-	void InsertEdge(int u, int v) {
-		SetEdge(u, v, 1);
-		SetEdge(v, u, 1);
+	void InsertEdge(int u, int v, int a) {
+		SetEdge(u, v, a);
 	}
 	void Display() {
 		if (IsEmpty()) { return; }
@@ -54,6 +57,7 @@ public:
 class shortestPath :public AdjMatGraph {
 	int dist[MAX_VTXS];
 	bool found[MAX_VTXS];
+	int parent[MAX_VTXS];
 public:
 	void PrintDistance() {
 		for (int i = 0; i < size; i++)
@@ -74,30 +78,66 @@ public:
 		}
 		return minPos;
 	}
-	void Dijikstra(int start) {
+	void Dijikstra(int start, int end) {
 		for (int i = 0; i < size; i++)
 		{
 			dist[i] = GetEdge(start, i);
 			found[i] = false;
 		}
+		fill_n(parent, size, -1);
 		found[start] = true;
 		dist[start] = 0;
+		parent[start] = start;
+		int next, current = start;
+		cout << start << " 정점에서 시작!" << endl;
 		for (int i = 0; i < size; i++)
 		{
+			if (current == end) {
+				cout << "목적 정점 " << end << "에 도착!" << endl;
+				break;
+			}
+
 			cout << "Step " << i + 1 << " : ";
 			PrintDistance();
-			int u = ChooseVertex();
-			found[u] = true;
+			next = ChooseVertex();
+			cout << next << " 정점에 안착 !" << endl;
+			found[next] = true;
 			for (int w = 0; w < size; w++)
 			{
-				/*if (found[w]==false&&) {
-					dist[w]=
-				}*/
+				if (!found[w] && dist[w] > dist[next] + GetEdge(next, w)) {
+					dist[w] = dist[next] + GetEdge(next, w);
+					parent[w] = next;
+				}
 			}
+			current = next;
 		}
 	}
+	void printPath(int start, int target) {
+		if (start == target) {
+			cout << "최단 경로는 " << start;
+			return;
+		}
+		printPath(start, parent[target]);
+		cout << " " << 
+	}
 };
-
 int main() {
+	shortestPath gra;
+	for (int i = 0; i < 7; i++)
+	{
+		gra.InsertVertex('A' + i);
+	}
+	gra.InsertEdge(0, 1, 2);
+	gra.InsertEdge(0, 2, 7);
+	gra.InsertEdge(1, 2, 1);
+	gra.InsertEdge(1, 3, 3);
+	gra.InsertEdge(2, 4, 4);
+	gra.InsertEdge(2, 5, 5);
+	gra.InsertEdge(3, 2, 2);
+	gra.InsertEdge(3, 4, 3);
+	gra.InsertEdge(4, 5, 4);
+	gra.InsertEdge(4, 6, 1);
+	gra.InsertEdge(5, 6, 5);
 
+	gra.Dijikstra(0, 5);
 }
