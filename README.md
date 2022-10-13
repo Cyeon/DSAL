@@ -25,3 +25,13 @@
   + BFS
 + 다익스트라
 + A*
++ 최소 신장 트리
+  + Kruskal (크루스칼)
+    + Union&Find
+  + Prim (프림)
+
+### 외부링크
+
+**[알고리즘 노트](https://docs.google.com/document/d/1ZnixJTwG-JUVcJhLTrxuOx-IVLRWPosNe-oNmzAxuk0/edit)**
+
+ 
