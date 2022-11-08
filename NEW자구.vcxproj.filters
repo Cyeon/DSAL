@@ -15,7 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1102_B_수정렬하기2.cpp">
+    <ClCompile Include="1108_B_베스트셀러.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1108_B_포켓몬.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1108_B_그룹단어체커.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1108_B_듣보잡.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
