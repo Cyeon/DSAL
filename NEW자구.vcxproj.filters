@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1110_B_숫자카드.cpp">
+    <ClCompile Include="1115_실습01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1110_B_숫자카드2.cpp">
+    <ClCompile Include="1115_실습02.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
