@@ -17,8 +17,27 @@ int main() {
 	{
 		for (int j = 1; j <= k; j++)
 		{
-			if()
+			if (w[i] > k) {
+				DP[i][j] = DP[i - 1][j];
+			}
+			else
+			{
+				DP[i][j] = max(DP[i - 1][j], DP[i - 1][j - w[i]] + v[i]);
+			}
 		}
 	}
 	cout << DP[n][k];
 }
+
+// Input
+// 4 7
+// 6 13
+// 4 8
+// 3 6
+// 5 12
+//
+// My Output
+// 25
+// 
+// Answer
+// 14
