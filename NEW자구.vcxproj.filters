@@ -21,17 +21,5 @@
     <ClCompile Include="1206_B_평범한배낭.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1208_B_1로만들기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1213_P_체육복.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1213_B_동전0.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1215_P_완주하지못한선수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

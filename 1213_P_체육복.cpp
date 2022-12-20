@@ -13,28 +13,30 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
 		arr[n]++;
 	}
 
-	for (int i = 0; i < lost.size(); i++)
-	{
-		arr[lost[i]]--;
+	for (int n : lost) {
+		arr[n]--;
 	}
 
 	for (int i = 1; i <= n; i++)
 	{
-		if (arr[i - 1] > 0) {
-			arr[i - 1]--;
-			arr[i] ++;
-		}
-		else if (arr[i + 1] > 0) {
-			arr[i + 1]--;
-			arr[i]++;
+		if (arr[i] == -1) {
+			if (arr[i - 1] == 1) {
+				arr[i - 1]--;
+				arr[i]++;
+			}
+			else if (arr[i + 1] == 1) {
+				arr[i + 1]--;
+				arr[i]++;
+			}
 		}
 	}
-	for (int i = 0; i < n; i++)
+
+	for (int i = 1; i <= n; i++)
 	{
-		if (arr[i + 1] >= 0) {
+		if (arr[i] >= 0) {
 			answer++;
 		}
 	}
+
 	return answer;
 }
-
